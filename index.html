@@ -1,428 +1,543 @@
-<!doctype html>
-<html lang=en>
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="verify-v1" content="91yIG+EaOdwKuPX+R9ChHEWVXJ6wdQsq0gqD1c1sbaY="/>
-<title>David Shapiro, Resume- Web Developer</title>
+<title>D:\uploadedFiles\285ffd22e2117947b1c7714878ea7790-477b268c3fa5c0af\p1emkaummqatehui3dl1fv7l2m4.pdf</title>
 <style type="text/css">
-body{font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;text-align:center;margin:0;padding:0;line-height:1.5em;}
-header, section, article{display:block;}
-header{text-align:center;position:relative;z-index:1;}
-section{margin:20px 0 10px;padding:0;}
-p{margin-top:0;padding:0;}
-ul, ol{margin:10px 0 0;padding:0;}
-h1{margin:5px;font-size:2em;font-weight:bold;}
-h2{font-size:1.4em;font-style:italic;font-weight:bold;margin:5px 0;}
-h5{margin:20px 0 10px;font-size:1.2em;font-weight:bold;}
-a, a:link, a:visited{border:medium none;text-decoration:none;color:#009;cursor:pointer;}
-#resumecontainer{background-color:#F6F6F6;text-align:left;padding:20px;margin:20px auto;min-width:300px;max-width:600px;position:relative;}
-header p{margin:5px;}
-#links img{border:0 none;}
-.skills{margin:10px 10px;}
-.project{margin:10px 0 20px 10px;}
-section > p, section > article{margin:5px 0 0 10px;}
-#skills_section{position:relative;z-index:0;}
-#body_popup{position:absolute;left:0;top:0;z-index:1000;display:none;background-color:#FFFFFF;border:1px solid #000;padding:20px;min-width:300px;max-width:440px;text-align:left;}
-a:hover{text-decoration:none;color:#03F;}
-.close{display:block;float:right;}
-li{margin-left:5px;list-style-position:inside;list-style-type:circle;padding-left:0}
-ol > li{list-style-position:inside;list-style-type:decimal;margin-bottom:10px;margin-left:0;}
-#links{position:absolute;top:0;right:0;width:60px;}
-.formats{display:inline-block;height:16px;width:16px;background:url(img/links.png) no-repeat;}
-#doc{background-position:0 0;}
-#txt{background-position:0 -52px;}
-#pdf{background-position:0 -26px;}
-.indent{margin-left:20px;}
-@media only screen and (max-device-width: 480px) {
-body{font-size:18px;}
-#resumecontainer{padding:20px;margin:20px;max-width:1000px;}	
-#body_popup{max-width:1000px;}
-}
-</style>
-<script type="text/javascript">
-(function(){
-  function loadScript(url, callback){  //lifted from Nick Zakas
-    var script = document.createElement("script")
-    script.type = "text/javascript";
-    if (script.readyState){  //IE
-      script.onreadystatechange = function(){
-        if (script.readyState == "loaded" ||
-          script.readyState == "complete"){
-          script.onreadystatechange = null;
-          callback();
-        }
-      };
-    }else{  //Others
-      script.onload = function(){
-        callback();
-      };
-    }
-    script.src = url;
-    document.body.appendChild(script);
-  }
-  //libraries to load after document.load event
-  function afterLoad() {
-	loadScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", afterJQLoad);
-	loadScript("http://www.google-analytics.com/ga.js", googleCrap);
-  }
-  //stuff to do after jQuery is loaded
-  function afterJQLoad(){
-    var details = '',
-      coords = {left:'0px', top:'0px'},
-      close = function(){
-        details = '';
-        $("#body_popup > div.temp").remove();
-	    $("#body_popup").css({left:'0px', top:'0px'}).hide();
-      };
-    $(".details, .notice").click(function(e){  
-      var $target = $(this),
-	    coords = {left:'10px', top:e.pageY + 'px'};
-	  if(details !== ''){ 
-	    close();
-	  }
-	  details = $(this.rel).html();
-	  var id = ($target.hasClass("details")) ? "#skills_popup" : "#notice_popup";
-	  $("#body_popup").append(details).css(coords).show();
-    });
-    $(".close").click(function(){
-	  close();
-    });
-    $(".external").on('click', function(){
-      var url = this.rel;
-      window.open(url);
-      return;
-    }); 
-  }
-  function googleCrap(){
-    try {
-      var pageTracker = _gat._getTracker("UA-8130141-1");
-      pageTracker._trackPageview();
-    }catch(err){}  
-  }
-  
-  if (window.addEventListener){
-    window.addEventListener("load", afterLoad, false);
-  }else if (window.attachEvent){
-    window.attachEvent("onload", afterLoad);
-  } else {
-    window.onload = afterLoad;
-  }
-})();
-</script>
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-</head>
-
-<body>
-
-<div id="links">
-  <a class="formats" id="pdf" href="dshapiro.pdf"></a>
-  <!--<a class="formats" id="doc" href="dshapiro.doc"></a>-->
-  <!--<a class="formats" id="txt" href="dshapiro.txt"></a>-->
-</div>
-
-<div id="resumecontainer">
-
-<header>
-<h1>David Shapiro</h1>
-<p><a href="mailto:resume@david-shapiro.net">resume@david-shapiro.net</a></p>
-<p><a href="http://www.linkedin.com/in/dgshapiro">http://www.linkedin.com/in/dgshapiro</a></p>
-<p><a href="https://github.com/dgs700/">https://github.com/dgs700</a></p>
-
-<p><strong>Web Developer Resume &amp; Portfolio</strong></p>
-<p><em><a rel="#notice" class="proj_link notice">Notice to 3rd Party Recruiters (Please Read)</a></em></p>
-</header>
-
-<section>
-<h2>Objective</h2>
-<p>Seeking challenging opportunities in <em><strong>front-end web development / UI architecture</strong></em> within a 25 statute mile radius of Mountain View, CA 94043.</p>
-</section>
-
-<section>
-<h2>Summary</h2>
-<p>Fifteen years professional Internet industry experience
-in front &amp; backend web development, database design, integration, 
-implementation, software development, network and 
-systems administration, project and account management. Significant experience in SAAS, and Non-profit sectors.</p>
-</section>
-
-<section>
-<h2>Skills</h2>
-<article class="skills">
-<strong>Expert / Advanced</strong>
-<p>OO Javascript, jQuery, Backbone.js, Underscore.js, Require.js, xhtml, AJAX / JSON, CSS 2.1/3, Client debugging / optimization tools and techniques- Firebug, YSlow, JSLint, JSMin, Cake PHP, Dreamweaver, Aptana IDE, Netbeans IDE, MVC design, semantic markup, Document Object Model <a href="https://gist.github.com/2396079" target="_blank">(code sample)</a></p>
-</article>
-
-<article class="skills">
-<strong>Competent</strong>
-<p>REST, Git, Cross browser compatability, Dojo, Object Oriented PHP, Drupal CMS, MySQL, Java, J2EE, JPA, Struts 2, Webwork, Spring, Hibernate, Tomcat, Apache, SSL, JSP, A12Y, I18N, Photoshop, Acrobat, Zend Server, Linux / Unix shell, Windows, HTML 5 <a href="https://gist.github.com/2372741" target="_blank">(code sample)</a></p>
-</article>
-
-<article class="skills"><strong>Moderate Exposure</strong> <p>SCSS, Zend Framework, social media platforms &amp; integration, Web Services (WSDL/SOAP), Ant, 
- JSF, JBOSS, Glassfish, EJB, JMS, Velocity, Perl, Subversion SVN, CVS, Eclipse IDE</p>
-</article> 
-</section>
-
-<section id="skills_section">
-<h2>Clients &amp; Project Portfolio</h2>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.studentmentor.org/">
-  <strong>StudentMentor.org</strong></a> 
-  <strong class="indent">Front End Web Development</strong>
-  <em class="indent">2011 - present</em>
-<ul>
-<li>Web application migration from server (PHP, Zend) to client (Javascript, Backbone.js) <a href="https://gist.github.com/2244334" target="_blank">(code sample - js)</a></li>
-<li>Comprehensive website performance optimizations</li>
-<li>Javascript / AJAX UI upgrades and improvements <a href="https://gist.github.com/2244421" target="_blank">(code sample - js)</a></li>
-<li>jQuery, Backbone.js, ajax, html5, rest, css/scss, php, MySQL, ZendFramework</li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.midpenbgc.org">
-  <strong>Boys &amp; Girls Club</strong></a> 
-  <strong class="indent">Web Development Consultant &amp; Board Member</strong>
-  <em class="indent">2006 - present</em>
-<ul>
-<li>End to end web development <a href="https://gist.github.com/2370994" target="_blank">(code sample - php)</a> <a href="https://gist.github.com/2371888" target="_blank">(code sample - css)</a></li>
-<li>Cake PHP, MySQL, jQuery, CSS, AJAX / DHTML  <a href="https://gist.github.com/2370952" target="_blank">(code sample - js)</a>  <a href="https://gist.github.com/2370713" target="_blank">(code sample - js)</a></li> 
-<li><a class="proj_link details" rel="#bgc">Project details</a></li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.conservationcorpsnorthbay.org/">
-  <strong>Conservation Corps</strong></a> 
-  <strong class="indent">Web Development Consultant</strong>
-  <em class="indent">2008 - present</em>
-<ul>
-<li>End to end web development</li>
-<li>Drupal CMS, Dojo, jQuery, Java, JSP, Struts 2, Spring, Hibernate, MySQL, CSS <a href="https://gist.github.com/2372284" target="_blank">(code sample - java)</a></li>
-<li><a class="proj_link details" rel="#mcc">Project details</a></li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.taprootfoundation.org/">
-  <strong>Taproot Foundation</strong></a> 
-  <strong class="indent">Account Director, Project Manager, Web Developer</strong>
-  <em class="indent">2006 - 2011</em>
-<ul>
-<li>Recruit multi-disciplinary teams for pro-bono advanced website grants in the non-profit sector</li>
-<li>Manage client relationships, project scopes, and time-lines</li>
-<li>Manage consulting teams through all project phases- research, draft proposals, design, implementation, follow-up</li>                       
-<li>Provide high level and detailed technical direction to other developers and designers</li>
-<li>Ensure all deliverables conform to Best Practices and current standards</li>
-<li>Four year record of 100% client satisfaction</li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.sopypaa.org/">
-  <strong>SOPYPAA</strong></a> 
-  <strong class="indent">Web Developer - Pro Bono</strong>
-  <em class="indent">2007 - 2011</em>
-<ul>
-<li>End to end web development</li>
-<li>Cake PHP, jQuery, MySQL, CSS, AJAX</li>
-<li><a class="proj_link details" rel="#ypaa">Project details</a></li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.projecthired.org/">
-  <strong>ProjectHired</strong></a> 
-  <strong class="indent">Web Development Consultant</strong>
-  <em class="indent">2009</em>
-<ul>
-<li>JavaScript development</li>
-<li>DHTML menu navigation</li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.universalgiving.org">
-  <strong>UniversalGiving</strong></a> 
-  <strong class="indent">Web Developer - Pro Bono</strong>
-  <em class="indent">2007 - 2008</em>
-<ul>
-<li>Web Application development and maintenance- presentation layer and client code</li>
-<li>Javascript, Java, JSP, Struts, CVS</li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.rebuildingtogetherpeninsula.org">
-  <strong>Rebuilding Together Peninsula</strong></a> 
-  <strong class="indent">Web Developer - Pro Bono</strong>
-  <em class="indent">2005 - 2007</em>
-<ul>
-<li>Implemented complete site redesign</li>
-<li>HTML, CSS, JavaScript, PHP</li>
-</ul>
-</article>
-
-<article class="project">
-  <a class="proj_link external" rel="http://www.the-river.org">
-  <strong>The River Church Community</strong></a> 
-  <strong class="indent">Web Developer - Pro Bono</strong>
-  <em class="indent">2002 - 2003</em>
-<ul>
-<li>Web forms and custom content management</li>
-<li>HTML, CSS, Java, JSP, JDBC</li>
-</ul>
-</article>
-</section>
-
-<section id="clients">
-<h2>Selected Corporate Client List <em style="font-size:12px;font-weight:normal;">(1996 - 2002)</em></h2>
-
-<p><a class="proj_link external" rel="http://www.netsuite.com"><strong>Netsuite, Inc.</strong></a>
-<span class="indent">Senior Webserver Administrator</span></p>
-
-<p><a class="proj_link external" rel="http://www.narus.com"><strong>Narus, Inc.</strong></a>
-<span class="indent">Senior System &amp; Network Administrator</span></p>
-
-<p><a class="proj_link external" rel="http://www.quova.com"><strong>Quova, Inc.</strong></a>
-<span class="indent">Senior System &amp; Network Administrator</span></p>
-
-<p><a class="proj_link external" rel="http://www.cyberstars.com/psvc/enter.html"><strong>Philips Silicon Valley Center</strong></a>
-<span class="indent">Network Engineer</span></p>
-
-<p><a class="proj_link external" rel="http://www.sun.com"><strong>Sun Microsystems (Oracle)</strong></a>
-<span class="indent">System Administrator</span></p>
-
-<p><a class="proj_link external" rel="http://www.home.agilent.com"><strong>Agilent Technologies</strong></a>
-<span class="indent">Web Developer</span></p>
-
-<p><a class="proj_link external" rel="http://netscape.aol.com/"><strong>Netscape Communications (AOL)</strong></a>
-<span class="indent">System Administrator</span></p>
-
-<p><a class="proj_link external" rel="http://go.com/"><strong>Infoseek (Go.com)</strong></a>
-<span class="indent">Software Developer</span></p>
-
-<p><a class="proj_link external" rel="http://www-306.ibm.com/software/data/informix/"><strong>Informix Software (IBM)</strong></a>
-<span class="indent">System Administrator</span></p>
-</section>
-
-<section>
-<h2>Education</h2>
-<p><strong>University of California at Berkeley</strong>, BA Psychology</p>
-<p><strong>Foothill College</strong>, 42 units computer science, 4.0 GPA</p>
-
-</section>
-<br/><br/>
-<!--<p>
-    <a href="http://validator.w3.org/check?uri=referer" style="border-bottom:none;"><img
-        src="http://www.w3.org/Icons/valid-xhtml10-blue"
-        alt="Valid XHTML 1.0 Strict" height="31" width="88" style="border:none;" /></a>
-<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" style="border-bottom:none;">
-    <img style="border:none;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-</a>
-</p>
+<!--
+body { font-family: Arial; font-size: 10.0px }
+.pos { position: absolute; z-index: 0; left: 0px; top: 0px }
 -->
-<section style="margin-top:100px;">
-<h2>Project Details</h2>
-
-<article id="bgc" class="skills">
-<div class="temp">
-<h5><a class="proj_link external" rel="http://www.midpenbgc.org">Mid Peninsula Boys &amp; Girls Club</a></h5>
-<p>
-Organizational needs<br/><br/>
-Transform design mockups into client side code that is cross-browser compatible, and adheres to Web 2.0 standards and industry best practices.  Implement ease-of-use client behaviors and navigation with unobtrusive Javascript and jQuery.  Provide custom content management and information capture for fund-raising events, donors, members, and community. Ensure that all code is I18N ready for plans to add Spanish and Chinese languages. Ensure that all forms and data are secure with SSL and data sanitization.
-<br/><br/>
-Implementations
-</p>
-<ul>
-<li>Cake PHP framework configuration and custom extensions for MVC server-side logic</li>
-<li>MySQL configuration as attached data-store for above</li>
-<li>jQuery implementation for DHTML, AJAX form submits, validation, and image manipulation</li>
-<li>Internationalization (I18N), SSL</li>
-</ul>
+</style>
+</head>
+<body>
+<nobr><nowrap>
+<div class="pos" id="_0:0" style="top:0">
+<img name="_1100:850" src="page_001.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_0:0" style="top:1100">
+<img name="_1100:850" src="page_002.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_51:1177" style="top:1177;left:51">
+<span id="_15.1" style="font-weight:bold; font-family:Arial; font-size:15.1px; color:#000000">
+3. SR. SOFTWARE DEVELOPER</span>
 </div>
-</article>
-
-<article id="mcc" class="skills">
-<div class="temp">
-<h5><a class="proj_link external" rel="http://www.conservationcorpsnorthbay.org/">Conservation Corps North Bay</a></h5>
-<p>
-Organizational needs<br/><br/>  
-Site redesign to project a more professional appearance to the donor community. Interactive capabilities for applicants, volunteers, donors, and community members to submit information electronically and reduce paper usage.  Content management features to allow non-technical staff to add, delete, and update dynamic content. Multi-language capability for Spanish speaking corps members.
-<br/><br/>
-Implementations:
-</p>
-<ul>
-<li>Version 2.0 (released September, 2010)</li>
-<li>Extensive Drupal CMS customization and configuration to meet rapidly changing needs</li>
-<li>Complete custom Drupal theming to maintain current design</li>
-<li>Interoperability with legacy java based features<br/><br/></li>
-
-<li>Version 1.0 (released March, 2009)</li>
-<li>Custom CMS, data capture, and administrative application business logic implemented with Java / Struts 2 framework with Spring</li>
-<li>Model layer implemented with Hibernate / JPA, Spring / JTA, and MySQL for O/R mapping</li>
-<li>Model layer architected to utilize DAO, DTO, Entity Session design patterns</li>
-<li>View layer components include JSP, Freemarker, OGNL, Struts Tags</li>
-<li>View layer extensions include custom tag library to support Dojo 1.0+</li>
-<li>Client code implemented with XHTML, CSS, Javascript</li>
-<li>Extensive Dojo implementation for off-the-shelf widgets and custom form widgets, dynamic content display widgets</li>
-<li>Extensive cross browser compatibility testing</li>
-<li>SEO and Google Search integration</li>
-</ul>
+<div class="pos" id="_76:1200" style="top:1200;left:76">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Aiko Infotech, Thrissur / February 2012 to October 2017</span>
 </div>
-</article>
-
-<article id="ypaa" class="skills">
-<div class="temp">
-<h5><a class="proj_link external" rel="http://www.sopypaa.org/">Bay Area Young People in AA</a></h5>
-<p>
-Organizational needs<br/><br/>
-
-Simple to view website that is mobile friendly and displays as much information as possible with a single page load.  Custom CMS features that are easy to learn and use for an organization with frequent turnover.
-<br /><br />
-Implementations
-</p>
-<ul>
-<li>PHP / Cake PHP framework configuration and custom extensions for MVC server-side logic</li>
-<li>MySQL configuration as attached datastore for above</li>
-<li>jQuery implementation for DHTML, AJAX form submits, content scrolling and overlay</li>
-</ul>
+<div class="pos" id="_76:1241" style="top:1241;left:76">
+<span id="_13.8" style=" font-family:Times New Roman; font-size:13.8px; color:#000000">
+&#160;<span id="_15.0" style=" font-family:Arial; font-size:15.0px"> Worked as a software developer at Aiko Infotech From February 2012 to October 2017.</span></span>
 </div>
-</article>
-
-<article id="notice" class="skills">
-<div class="temp">
-<h5>Notice to 3rd Party Recruiters</h5>
-<p>
-Dear Unsolicited Recruiters:
-<br/><br/>
-I am happy to work with those representing legitimate companies at fair rates.  Unfortunately, there are too many unscrupulous clowns out there trying to make a quick buck that are disrespectful of my time. So I have adopted a set of non-negotiable policies for dealing with 3rd party entities.  If you are able to respect and abide by ALL of my policies then great, perhaps we can work together, and if not, PLEASE MOVE ON.
-</p>
-<ol>
-<li>I do not deal with off-shore companies under any circumstances. You will be marked as spam.</li>
-<li>I only consider opportunities local to my current address- San Francisco, SF Peninsula, or San Jose.  Send me an out of state listing. I mark you as spam.</li>
-<li>Send a DETAILED JOB DESCRIPTION in the FIRST email including the EXACT CITY where the organization is located.  I do not respond to emails where you only state in your opinion that you have a great job opportunity and want to chat further.  It&rsquo;s a waste of my time and I mark you as a spammer. </li>
-<li>The job listing better be REAL. If it is not, you are marked as spam.</li>
-<li>DO NOT claim to represent a company unless you have done previous business with them- meaning you have successfully placed other candidates there, and DO NOT claim to be representing me to any organization unless all the terms in this list are agreed to and abided by.  I will make an extra effort to notify the principle organization of your fraudulent efforts.</li>
-<li>If you send me a listing, and I respond with interest, if I don't hear back from you, I mark you as spam.</li>
-<li>If you have a &quot;fast growing start-up&quot; I am not interested unless it is for an hourly contract rate.  I have ended up working for free too many times, and I will not do it again. Again, you are marked as spam.</li>
-<li>I will however, consider being part of an initial founding start-up team if the idea is clearly viable. I perform due diligence. Be prepared to provide the necessary information.</li>
-<li>I will not provide reference contact information until interviews have been conducted with the hiring manager AND interest from both sides has been expressed.</li>
-<li>I require a phone screen with the hiring manager before I will agree to an on-site interview.</li>
-<li>I will not spend more than 5 minutes creating special presentations, filling out questionnaires or taking tests.</li>
-</ol>
+<div class="pos" id="_76:1266" style="top:1266;left:76">
+<span id="_13.8" style=" font-family:Times New Roman; font-size:13.8px; color:#000000">
+&#160;<span id="_15.0" style=" font-family:Arial; font-size:15.0px"> I have worked in different platforms here like PHP, ASP.NET, VB, Android. Phonegap etc.</span></span>
 </div>
-</article>
-
-</section>
-
-<div id="body_popup">
-<a class="close">[X] Close</a>
+<div class="pos" id="_76:1290" style="top:1290;left:76">
+<span id="_13.8" style=" font-family:Times New Roman; font-size:13.8px; color:#000000">
+&#160;<span id="_15.0" style=" font-family:Arial; font-size:15.0px"> I have done various projects from this company.</span></span>
 </div>
-
+<div class="pos" id="_51:1353" style="top:1353;left:51">
+<span id="_19.1" style="font-weight:bold; font-family:Arial; font-size:19.1px; color:#000000">
+EDUCATION</span>
 </div>
+<div class="pos" id="_49:1394" style="top:1394;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+2016   Doing BCA at IGNOU University</span>
+</div>
+<div class="pos" id="_49:1430" style="top:1430;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+2011   Diploma in Computer Engineering from Govt. Polytechnic Kunnamkulam with first class.</span>
+</div>
+<div class="pos" id="_49:1467" style="top:1467;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+2008   12th ( Computer Application) from Sarvodayam Aryampadam, Board of Vocational Higher Secondary </span>
+</div>
+<div class="pos" id="_150:1486" style="top:1486;left:150">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Education.</span>
+</div>
+<div class="pos" id="_49:1504" style="top:1504;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+2006   10th from NSS HS Mullurkkara ,Kerala State Board</span>
+</div>
+<div class="pos" id="_51:1557" style="top:1557;left:51">
+<span id="_19.1" style="font-weight:bold; font-family:Arial; font-size:19.1px; color:#000000">
+ PROJECTS</span>
+</div>
+<div class="pos" id="_49:1595" style="top:1595;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1595" style="top:1595;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Hospital Management</span>
+</div>
+<div class="pos" id="_49:1613" style="top:1613;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:1613" style="top:1613;left:149">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+Laravel, PgSql</span>
+</div>
+<div class="pos" id="_49:1632" style="top:1632;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Description:    A hospital management application. DRFIRST implemented and as a part of EHR Certification </span>
+</div>
+<div class="pos" id="_49:1650" style="top:1650;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+process. </span>
+</div>
+<div class="pos" id="_49:1701" style="top:1701;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1701" style="top:1701;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Shopndial</span>
+</div>
+<div class="pos" id="_49:1720" style="top:1720;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:1720" style="top:1720;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Android </span>
+</div>
+<div class="pos" id="_49:1738" style="top:1738;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Description:  A mobile application for search nearest shops and top rated attractions.</span>
+</div>
+<div class="pos" id="_49:1775" style="top:1775;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1775" style="top:1775;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Egebjerg</span>
+</div>
+<div class="pos" id="_49:1794" style="top:1794;left:49">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:1794" style="top:1794;left:149">
+<span id="_14.2" style=" font-family:Arial; font-size:14.2px; color:#000000">
+Zend (PHP),MYSQL</span>
+</div>
+<div class="pos" id="_49:1812" style="top:1812;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description:  A shoping site in Denmark.</span>
+</div>
+<div class="pos" id="_49:1850" style="top:1850;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1850" style="top:1850;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Amtool</span>
+</div>
+<div class="pos" id="_49:1868" style="top:1868;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:1868" style="top:1868;left:149">
+<span id="_14.3" style=" font-family:Arial; font-size:14.3px; color:#000000">
+Laravel, MYSQL</span>
+</div>
+<div class="pos" id="_49:1887" style="top:1887;left:49">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Description: A website for asset management</span>
+</div>
+<div class="pos" id="_49:1924" style="top:1924;left:49">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1924" style="top:1924;left:149">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Myhems</span>
+</div>
+<div class="pos" id="_49:1942" style="top:1942;left:49">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Tools: </span>
+</div>
+<div class="pos" id="_149:1942" style="top:1942;left:149">
+<span id="_14.3" style=" font-family:Arial; font-size:14.3px; color:#000000">
+Laravel, MYSQL</span>
+</div>
+<div class="pos" id="_49:1961" style="top:1961;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description:  A website for create alcohol testing events. </span>
+</div>
+<div class="pos" id="_49:1999" style="top:1999;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:1999" style="top:1999;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tykezhub</span>
+</div>
+<div class="pos" id="_49:2017" style="top:2017;left:49">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2017" style="top:2017;left:149">
+<span id="_14.3" style=" font-family:Arial; font-size:14.3px; color:#000000">
+Codeigniter (PHP),MYSQL</span>
+</div>
+<div class="pos" id="_49:2035" style="top:2035;left:49">
+<span id="_15.7" style=" font-family:Arial; font-size:15.7px; color:#000000">
+Description: A website where companies can post their projects and freelancers can hire that projects. </span>
+</div>
+<div class="pos" id="_150:2054" style="top:2054;left:150">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Freelancers  can  also  update  their  skills  and  experience.  Companies  allocate  projects  to </span>
+</div>
+<div class="pos" id="_150:2073" style="top:2073;left:150">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+freelancers and payments are managed through<span id="_16.3" style=" font-size:16.3px"> this site.  </span></span>
+</div>
+<div class="pos" id="_0:0" style="top:2200">
+<img name="_1100:850" src="page_003.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_50:2271" style="top:2271;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2271" style="top:2271;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Locus</span>
+</div>
+<div class="pos" id="_50:2289" style="top:2289;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2289" style="top:2289;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Php Codeigniter</span>
+</div>
+<div class="pos" id="_50:2308" style="top:2308;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description: An Application for student management system. This application is created for Australian based </span>
+</div>
+<div class="pos" id="_150:2326" style="top:2326;left:150">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+company. This is an outsourced project.</span>
+</div>
+<div class="pos" id="_50:2364" style="top:2364;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2364" style="top:2364;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Industrial Safety</span>
+</div>
+<div class="pos" id="_50:2382" style="top:2382;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2382" style="top:2382;left:149">
+<span id="_13.8" style=" font-family:Arial; font-size:13.8px; color:#000000">
+PHP,MYSQL,</span>
+</div>
+<div class="pos" id="_50:2401" style="top:2401;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Description: A website where company staff can update safety details of different industries and admin can </span>
+</div>
+<div class="pos" id="_150:2419" style="top:2419;left:150">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+generate  reports.</span>
+</div>
+<div class="pos" id="_50:2457" style="top:2457;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2457" style="top:2457;left:149">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Apaac</span>
+</div>
+<div class="pos" id="_50:2476" style="top:2476;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2476" style="top:2476;left:149">
+<span id="_13.8" style=" font-family:Arial; font-size:13.8px; color:#000000">
+PHP,MYSQL,</span>
+</div>
+<div class="pos" id="_50:2494" style="top:2494;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Description: A website where users can get prizes for some questions that relates to Advertisements. A site </span>
+</div>
+<div class="pos" id="_150:2513" style="top:2513;left:150">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+for Advertisement Promotion And Analysis Center</span>
+</div>
+<div class="pos" id="_50:2551" style="top:2551;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2551" style="top:2551;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Donorhub</span>
+</div>
+<div class="pos" id="_50:2569" style="top:2569;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Tools:           Php Codeigniter,Android </span>
+</div>
+<div class="pos" id="_50:2587" style="top:2587;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Description: An Application created for search blood donors.</span>
+</div>
+<div class="pos" id="_50:2645" style="top:2645;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2645" style="top:2645;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Mobitrack</span>
+</div>
+<div class="pos" id="_50:2663" style="top:2663;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2663" style="top:2663;left:149">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Android , PHP,MySql</span>
+</div>
+<div class="pos" id="_50:2682" style="top:2682;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description: An application for tracking sms history , call history,browsing history and Current Location. </span>
+</div>
+<div class="pos" id="_50:2720" style="top:2720;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2720" style="top:2720;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Mpdt</span>
+</div>
+<div class="pos" id="_50:2738" style="top:2738;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2738" style="top:2738;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Phonegap, Php Codeigniter</span>
+</div>
+<div class="pos" id="_50:2757" style="top:2757;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description: An Application created in phonegap for upload images of trees and their details . </span>
+</div>
+<div class="pos" id="_50:2814" style="top:2814;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2814" style="top:2814;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+EduApp</span>
+</div>
+<div class="pos" id="_50:2833" style="top:2833;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2833" style="top:2833;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Android</span>
+</div>
+<div class="pos" id="_50:2851" style="top:2851;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Description: This is a very useful application for those who are searching for some course, career or college. </span>
+</div>
+<div class="pos" id="_150:2870" style="top:2870;left:150">
+<span id="_15.5" style=" font-family:Arial; font-size:15.5px; color:#000000">
+It enables students to find out the best suitable course for him  and for which he is eligible. It </span>
+</div>
+<div class="pos" id="_150:2888" style="top:2888;left:150">
+<span id="_15.5" style=" font-family:Arial; font-size:15.5px; color:#000000">
+also redirects the user to correct course  that will lead him to intended career. This app also </span>
+</div>
+<div class="pos" id="_150:2906" style="top:2906;left:150">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+keeps track of courses that has been offered by different colleges.</span>
+</div>
+<div class="pos" id="_50:2944" style="top:2944;left:50">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:2944" style="top:2944;left:149">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Imperium App</span>
+</div>
+<div class="pos" id="_50:2963" style="top:2963;left:50">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:2963" style="top:2963;left:149">
+<span id="_14.9" style=" font-family:Arial; font-size:14.9px; color:#000000">
+Phonegap</span>
+</div>
+<div class="pos" id="_50:2981" style="top:2981;left:50">
+<span id="_15.4" style=" font-family:Arial; font-size:15.4px; color:#000000">
+Description: An Application created for imperium using avaya ip communicator. This is an application for </span>
+</div>
+<div class="pos" id="_150:3000" style="top:3000;left:150">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+voice call and video call purpose , using VPN, WebRtc SDK api.</span>
+</div>
+<div class="pos" id="_50:3038" style="top:3038;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:3038" style="top:3038;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+SAA</span>
+</div>
+<div class="pos" id="_50:3056" style="top:3056;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:3056" style="top:3056;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+VB.net,C#,MSSQL</span>
+</div>
+<div class="pos" id="_50:3075" style="top:3075;left:50">
+<span id="_15.7" style=" font-family:Arial; font-size:15.7px; color:#000000">
+Description: An Application that parsing xml files of transaction details of different stores for Abudhabi </span>
+</div>
+<div class="pos" id="_150:3093" style="top:3093;left:150">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+airport (Both web and application) .</span>
+</div>
+<div class="pos" id="_50:3148" style="top:3148;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:3148" style="top:3148;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Laundry Book</span>
+</div>
+<div class="pos" id="_50:3167" style="top:3167;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:3167" style="top:3167;left:149">
+<span id="_14.2" style=" font-family:Arial; font-size:14.2px; color:#000000">
+VB.net,MS SQL</span>
+</div>
+<div class="pos" id="_50:3185" style="top:3185;left:50">
+<span id="_15.5" style=" font-family:Arial; font-size:15.5px; color:#000000">
+Description: A web app for managing laundry services like collect cloths, billing, generate tags for cloths, </span>
+</div>
+<div class="pos" id="_150:3204" style="top:3204;left:150">
+<span id="_15.5" style=" font-family:Arial; font-size:15.5px; color:#000000">
+payment collection & currency conversion, return to customers and generate different types of </span>
+</div>
+<div class="pos" id="_150:3222" style="top:3222;left:150">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+reports.</span>
+</div>
+<div class="pos" id="_0:0" style="top:3300">
+<img name="_1100:850" src="page_004.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_50:3371" style="top:3371;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:3371" style="top:3371;left:149">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Seeqatar</span>
+</div>
+<div class="pos" id="_50:3389" style="top:3389;left:50">
+<span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:3389" style="top:3389;left:149">
+<span id="_14.2" style=" font-family:Arial; font-size:14.2px; color:#000000">
+ASP.NET using VB, MS SQL, Android</span>
+</div>
+<div class="pos" id="_50:3408" style="top:3408;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Description:    Collect,  manipulate  and  visualize  the  whole  information  about    Qatar  city  including  news,   </span>
+</div>
+<div class="pos" id="_50:3426" style="top:3426;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+business directory.    </span>
+</div>
+<div class="pos" id="_50:3463" style="top:3463;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:3463" style="top:3463;left:149">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Msale</span>
+</div>
+<div class="pos" id="_50:3481" style="top:3481;left:50">
+<span id="_15.1" style=" font-family:Arial; font-size:15.1px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:3481" style="top:3481;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Android,Sqlite</span>
+</div>
+<div class="pos" id="_50:3500" style="top:3500;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Description An application for business: to store items, invoice details of sales and purchase.</span>
+</div>
+<div class="pos" id="_50:3537" style="top:3537;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Title:</span>
+</div>
+<div class="pos" id="_149:3537" style="top:3537;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Sakthan Matrimony</span>
+</div>
+<div class="pos" id="_50:3555" style="top:3555;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Tools:</span>
+</div>
+<div class="pos" id="_149:3555" style="top:3555;left:149">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+ASP.net,C#,SQL Server</span>
+</div>
+<div class="pos" id="_50:3573" style="top:3573;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Description: A website where users can search bride and grooms.</span>
+</div>
+<div class="pos" id="_51:3662" style="top:3662;left:51">
+<span id="_18.7" style="font-weight:bold; font-family:Arial; font-size:18.7px; color:#000000">
+PERSONAL DETAILS</span>
+</div>
+<div class="pos" id="_50:3700" style="top:3700;left:50">
+<span id="_14.7" style=" font-family:Arial; font-size:14.7px; color:#000000">
+Date of Birth: </span>
+</div>
+<div class="pos" id="_199:3700" style="top:3700;left:199">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+12th  April, 1991</span>
+</div>
+<div class="pos" id="_50:3719" style="top:3719;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Languages Known:  English, Malayalam & Tamil </span>
+</div>
+<div class="pos" id="_50:3737" style="top:3737;left:50">
+<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#000000">
+Contact Address:</span>
+</div>
+<div class="pos" id="_199:3737" style="top:3737;left:199">
+<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#000000">
+Kumblangad, Assariveedu ,   Kanjirakode PO, Thrissur, Kerala -680590</span>
+</div>
+<div class="pos" id="_51:3790" style="top:3790;left:51">
+<span id="_18.6" style="font-weight:bold; font-family:Arial; font-size:18.6px; color:#000000">
+DECLARATION</span>
+</div>
+<div class="pos" id="_50:3828" style="top:3828;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+     I hereby declare that the information furnished above is true to the best of my knowledge.</span>
+</div>
+<div class="pos" id="_50:3865" style="top:3865;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+RAHUL K A</span>
+</div>
+<div class="pos" id="_50:3884" style="top:3884;left:50">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#000000">
+Date: 15/10/2020</span>
+</div>
+</nowrap></nobr>
 </body>
 </html>
